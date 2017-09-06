@@ -1,0 +1,6 @@
+C:\data\Projects\GitRepos\rfilegen\rfilegen\bin\Release\rfilegen.exe.config
+C:\data\Projects\GitRepos\rfilegen\rfilegen\bin\Release\rfilegen.exe
+C:\data\Projects\GitRepos\rfilegen\rfilegen\bin\Release\rfilegen.pdb
+C:\data\Projects\GitRepos\rfilegen\rfilegen\obj\Release\rfilegen.csprojResolveAssemblyReference.cache
+C:\data\Projects\GitRepos\rfilegen\rfilegen\obj\Release\rfilegen.exe
+C:\data\Projects\GitRepos\rfilegen\rfilegen\obj\Release\rfilegen.pdb
