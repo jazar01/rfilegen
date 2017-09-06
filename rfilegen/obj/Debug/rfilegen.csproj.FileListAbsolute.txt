@@ -7,3 +7,6 @@ C:\data\Projects\rfilegen\rfilegen\obj\Debug\rfilegen.pdb
 C:\data\Projects\GitRepos\rfilegen\rfilegen\bin\Debug\rfilegen.exe.config
 C:\data\Projects\GitRepos\rfilegen\rfilegen\obj\Debug\rfilegen.exe
 C:\data\Projects\GitRepos\rfilegen\rfilegen\obj\Debug\rfilegen.pdb
+C:\data\Projects\GitRepos\rfilegen\rfilegen\bin\Debug\rfilegen.exe
+C:\data\Projects\GitRepos\rfilegen\rfilegen\bin\Debug\rfilegen.pdb
+C:\data\Projects\GitRepos\rfilegen\rfilegen\obj\Debug\rfilegen.csprojResolveAssemblyReference.cache

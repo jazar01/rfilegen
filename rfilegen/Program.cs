@@ -2,7 +2,6 @@
 using System.IO;
 using System.Security.Cryptography;
 
-
 namespace rfilegen
 {
     class Program
@@ -19,7 +18,7 @@ namespace rfilegen
         static void Main(string[] args)
         {
             string fname;
-            int flength;
+            uint flength;
             Byte[] randombytes = new Byte[1024];  // 1K byte array
 
             
@@ -30,12 +29,15 @@ namespace rfilegen
             }
 
             fname = args[0];
-            flength = int.Parse(args[1]) * 1024;
+            
+            uint fblocks = uint.Parse(args[1]);
+            flength =  fblocks * 1024;
 
             DateTime tstart = DateTime.Now;
             FileStream stream = new FileStream(fname, FileMode.Append,FileAccess.Write,FileShare.None,32768); 
-                     
-            for (int i = 0; i < flength; i++)
+            
+             
+            for (int i = 0; i < fblocks; i++)
             {
                 CSP.GetBytes(randombytes);
                 stream.Write(randombytes, 0, 1024);
@@ -44,7 +46,8 @@ namespace rfilegen
 
             DateTime tend = DateTime.Now;
             TimeSpan t = tend.Subtract(tstart);
-            Console.Write("     time: " + t.TotalSeconds.ToString("0.000") + " seconds  (" + ((long) (flength)/ t.TotalSeconds).ToString("0.0") + " KB/s)\n");
+            double speed = (double)fblocks / t.TotalSeconds;
+            Console.Write("     time: " + t.TotalSeconds.ToString("0.000") + " seconds  (" + speed.ToString("0.0") + " KB/s)\n");
 
         }
 
